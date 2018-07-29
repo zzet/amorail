@@ -1,9 +1,9 @@
-require 'amorail/entities/elementable'
+require 'amorail/entities/concerns/elementable'
 
 module Amorail
   # AmoCRM note entity
   class Note < Amorail::Entity
-    include Elementable
+    include ::Amorail::Entities::Concerns::Elementable
 
     amo_names 'notes'
 

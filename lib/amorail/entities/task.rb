@@ -1,9 +1,9 @@
-require 'amorail/entities/elementable'
+require 'amorail/entities/concerns/elementable'
 
 module Amorail
   # AmoCRM task entity
   class Task < Amorail::Entity
-    include Elementable
+    include ::Amorail::Entities::Concerns::Elementable
 
     amo_names 'tasks'
 

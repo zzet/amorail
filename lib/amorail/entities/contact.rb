@@ -1,9 +1,9 @@
-require 'amorail/entities/leadable'
+require 'amorail/entities/concerns/leadable'
 
 module Amorail
   # AmoCRM contact entity
   class Contact < Amorail::Entity
-    include Leadable
+    include ::Amorail::Entities::Concerns::Leadable
     amo_names 'contacts'
 
     amo_field :name, :company_name, :linked_company_id
